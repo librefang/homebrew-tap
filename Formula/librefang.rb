@@ -2,26 +2,16 @@ class Librefang < Formula
   desc "Community-Maintained Agent Operating System written in Rust"
   homepage "https://librefang.ai"
   license "MIT"
-  version "0.3.58-20260313"
+  version "0.4.0-20260314"
 
-  on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/librefang/librefang/releases/download/v0.3.58-20260313/librefang-aarch64-apple-darwin.tar.gz"
-      sha256 "4b4ff268c06186604e5d2f0bd0192c6caa6c248d67304cb45af0823b10ac5abc"
-    else
-      url "https://github.com/librefang/librefang/releases/download/v0.3.58-20260313/librefang-x86_64-apple-darwin.tar.gz"
-      sha256 "3f76a9e3aa4a5b48d026740328399a0b6fa11c187f7008d19ddd2a5376fc591e"
-    end
-  end
+  depends_on :macos
 
-  on_linux do
-    if Hardware::CPU.arm?
-      url "https://github.com/librefang/librefang/releases/download/v0.3.58-20260313/librefang-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "90266d6330e3cedef02ef6913270726e3f3c6d9fd6fbfda508516d9a3e4e9333"
-    else
-      url "https://github.com/librefang/librefang/releases/download/v0.3.58-20260313/librefang-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3a52bd28081856c55100256cfb22210a3f6613933697ad5369f3fd995ab563b0"
-    end
+  if Hardware::CPU.arm?
+    url "https://github.com/librefang/librefang/releases/download/v0.4.0-20260314/librefang-aarch64-apple-darwin.tar.gz"
+    sha256 "7f8d4ab952332efc75e9ee606b394d955956bd836f9a85ce41a6c95398117475"
+  else
+    url "https://github.com/librefang/librefang/releases/download/v0.4.0-20260314/librefang-x86_64-apple-darwin.tar.gz"
+    sha256 "fcc71ae05bf02529a45e13f452c449c8059ecb898a948d582b814ca5393a7809"
   end
 
   def install

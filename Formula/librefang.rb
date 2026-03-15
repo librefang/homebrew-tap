@@ -2,16 +2,16 @@ class Librefang < Formula
   desc "Community-Maintained Agent Operating System written in Rust"
   homepage "https://librefang.ai"
   license "MIT"
-  version "0.4.7-20260315"
+  version "0.5.0-20260316"
 
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/librefang/librefang/releases/download/v0.4.7-20260315/librefang-aarch64-apple-darwin.tar.gz"
-    sha256 "8213d3c85b1d7fea210c45bb57269a65bbb862b1eebc79c4b5513a9ee8dc447e"
+    url "https://github.com/librefang/librefang/releases/download/v0.5.0-20260316/librefang-aarch64-apple-darwin.tar.gz"
+    sha256 "cdf6c3ee327a3497220e4200215bf56237d185aa66aa8b46c631eab12956cca9"
   else
-    url "https://github.com/librefang/librefang/releases/download/v0.4.7-20260315/librefang-x86_64-apple-darwin.tar.gz"
-    sha256 "704d940dbd1985919151b2b2243ffcc0c47f1d35e8145b26cc2f65d41aa2e64e"
+    url "https://github.com/librefang/librefang/releases/download/v0.5.0-20260316/librefang-x86_64-apple-darwin.tar.gz"
+    sha256 "eb76312f12abe6750a0ec51029861982871a6fe872c661f4df0beca3a677eb7f"
   end
 
   def install

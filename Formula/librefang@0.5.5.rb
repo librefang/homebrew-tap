@@ -1,4 +1,4 @@
-class Librefang < Formula
+class LibrefangAT055 < Formula
   desc "Community-Maintained Agent Operating System written in Rust"
   homepage "https://librefang.ai"
   license "MIT"
@@ -13,6 +13,8 @@ class Librefang < Formula
     url "https://github.com/librefang/librefang/releases/download/v0.5.5-20260317/librefang-x86_64-apple-darwin.tar.gz"
     sha256 "77658b57a8774b0b2300282a622edeb4ac59ee2dbe72e0fa4356cb1da10af524"
   end
+
+  keg_only :versioned_formula
 
   def install
     bin.install "librefang"

@@ -8,10 +8,10 @@ class LibrefangAT070 < Formula
 
   if Hardware::CPU.arm?
     url "https://github.com/librefang/librefang/releases/download/v0.7.0-20260321/librefang-aarch64-apple-darwin.tar.gz"
-    sha256 "b4185ec202c6443b65eadf92490b0c71f212b73cf8a5d74b52e95956ec2d4b83"
+    sha256 "83a3680d1a868201ea2969ca5346e0fe0327800004daaa8021b21329e520970c"
   else
     url "https://github.com/librefang/librefang/releases/download/v0.7.0-20260321/librefang-x86_64-apple-darwin.tar.gz"
-    sha256 "1c00f8c192482e18f9d39967c4c465fd97fbdad9dae65405e8e06f4a9440b58b"
+    sha256 "5e95d0c354dc5084dfa9411c899a21c4808edd8eb51e7de2b699d9fd3226e7ea"
   end
 
   keg_only :versioned_formula

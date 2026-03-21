@@ -1,4 +1,4 @@
-class Librefang < Formula
+class LibrefangAT202632123-rc1 < Formula
   desc "Community-Maintained Agent Operating System written in Rust"
   homepage "https://librefang.ai"
   license "MIT"
@@ -28,6 +28,8 @@ class Librefang < Formula
       sha256 "bfd8e316d0b4e304f35c0ef3df3db3fdfa9746b9655a49a9fb60308816cf95ee"
     end
   end
+
+  keg_only :versioned_formula
 
   def install
     bin.install "librefang"

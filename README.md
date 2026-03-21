@@ -2,11 +2,18 @@
 
 Unofficial Homebrew tap for [LibreFang](https://librefang.ai), a community-maintained Agent Operating System written in Rust.
 
-## Installation
+## CLI
 
 ```bash
 brew tap librefang/tap
 brew install librefang
+```
+
+## Desktop App (macOS)
+
+```bash
+brew tap librefang/tap
+brew install --cask librefang
 ```
 
 ## Usage
@@ -19,6 +26,13 @@ librefang init
 librefang start
 
 # Dashboard: http://localhost:4545
+```
+
+## Version Pinning
+
+```bash
+# Install a specific version
+brew install librefang/tap/librefang@2026.3.2114
 ```
 
 ## Documentation

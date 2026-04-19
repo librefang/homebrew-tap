@@ -1,4 +1,4 @@
-cask "librefang-beta" do
+cask "librefang@2026.4.19-beta25" do
   arch arm: "aarch64", intel: "x64"
 
   version "26.4.32215"
@@ -12,12 +12,9 @@ cask "librefang-beta" do
 
   url "https://github.com/librefang/librefang/releases/download/v2026.4.19-beta25/LibreFang_#{version}_#{arch}.dmg",
       verified: "github.com/librefang/librefang/"
-  name "LibreFang (beta)"
-  desc "Community-Maintained Agent Operating System written in Rust (beta channel)"
+  name "LibreFang 2026.4.19-beta25"
+  desc "Community-Maintained Agent Operating System written in Rust (pinned to 2026.4.19-beta25)"
   homepage "https://librefang.ai"
-
-  conflicts_with cask: "librefang"
-  conflicts_with cask: "librefang-rc"
 
   depends_on macos: ">= :ventura"
 

@@ -5,7 +5,6 @@ class LibrefangBeta < Formula
   version "2026.4.22-beta3"
 
   conflicts_with "librefang", because: "both install a \`librefang\` binary"
-  conflicts_with "librefang-rc", because: "both install a \`librefang\` binary"
 
   on_macos do
     if Hardware::CPU.arm?

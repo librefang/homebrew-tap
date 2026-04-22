@@ -17,7 +17,6 @@ cask "librefang-beta" do
   homepage "https://librefang.ai"
 
   conflicts_with cask: "librefang"
-  conflicts_with cask: "librefang-rc"
 
   depends_on macos: ">= :ventura"
 

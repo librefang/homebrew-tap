@@ -13,7 +13,7 @@ class LibrefangBeta < Formula
       sha256 "ac648f0e41d74a31571b9343083a4e534e3cc05556e961d78e07ff6a17e0d0a9"
     else
       url "https://github.com/librefang/librefang/releases/download/v2026.5.8-beta.10/librefang-x86_64-apple-darwin.tar.gz"
-      sha256 "70d1e0fa581cedb5a5048419786d0bfce2639259cc65fc8e4e3c346ecfe4a812"
+      sha256 "33147de360ea0b4fe7a4b91014d345090b07af4475509d3422d7108209838aca"
     end
   end
 

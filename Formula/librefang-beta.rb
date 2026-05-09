@@ -10,20 +10,20 @@ class LibrefangBeta < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/librefang/librefang/releases/download/v2026.5.8-beta.10/librefang-aarch64-apple-darwin.tar.gz"
-      sha256 "65ebffbaefaef5a50d00d7ae1de7d317d7869a2ff63a54ba7ba0e392f3a99040"
+      sha256 "ac648f0e41d74a31571b9343083a4e534e3cc05556e961d78e07ff6a17e0d0a9"
     else
       url "https://github.com/librefang/librefang/releases/download/v2026.5.8-beta.10/librefang-x86_64-apple-darwin.tar.gz"
-      sha256 "48c618862dea747d5a58ae8a5a49e92fdb334e6fbd3baefe6015b324d15a3df2"
+      sha256 "70d1e0fa581cedb5a5048419786d0bfce2639259cc65fc8e4e3c346ecfe4a812"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/librefang/librefang/releases/download/v2026.5.8-beta.10/librefang-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3a707e68b525e92e4ba8915869cb70fdd9cf6b70e4ade901a466f5b456b62ad9"
+      sha256 "8d93a25b03ddc5c9a8d76322262cc537b64f81edbacda8629efeeba2d30063b3"
     else
       url "https://github.com/librefang/librefang/releases/download/v2026.5.8-beta.10/librefang-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "2859824b1947575fbef6f94b2770eb9ef1d99a3bb56ca4fe4a7b02446e668c2b"
+      sha256 "e23cb971082fc1cecc41d4714abc88dfd4766b9a2401a0fe1f8eca5ff5ab91ff"
     end
   end
 

@@ -4,10 +4,10 @@ cask "librefang-rc" do
   version "26.5.32090"
 
   on_arm do
-    sha256 "ebb6b41e4b215387ac4b8209bf6b2e517f930b7c7da616fe245f048ddd7888da"
+    sha256 "c1fbfecbf54b82c7e40c667a79a9ed11dd940c678a06bc33591ecacf3de1f1d9"
   end
   on_intel do
-    sha256 "d41823187d836716ab94d77ceb56e9440f892a37cba37d2d0826ef2f857930be"
+    sha256 "432af76713f2880bbadf234ac3d86b5c273ffbfb1fc6c2bb4c97d9c67268b15c"
   end
 
   url "https://github.com/librefang/librefang/releases/download/v2026.5.8-beta.10/LibreFang_#{version}_#{arch}.dmg",

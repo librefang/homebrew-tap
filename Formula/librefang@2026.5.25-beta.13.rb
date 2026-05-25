@@ -7,20 +7,20 @@ class LibrefangAT2026525-beta13 < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/librefang/librefang/releases/download/v2026.5.25-beta.13/librefang-aarch64-apple-darwin.tar.gz"
-      sha256 "b578faea392295988ffa313fcbe87452019dc9e70af2b5db0e04aa464cd21222"
+      sha256 "0cbf774a96b9a5af50f35b0a552bd6f79c05e0bac4b0a5e5eaaf8f7aafa12be4"
     else
       url "https://github.com/librefang/librefang/releases/download/v2026.5.25-beta.13/librefang-x86_64-apple-darwin.tar.gz"
-      sha256 "b3ec000f62c80e7d93f516136bd472e41691a130b7d6775661654a46b3a1c679"
+      sha256 "ec200bc1b9aa0438871091f5ceee7f114e160f922fbfe7747acc943d866beba3"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/librefang/librefang/releases/download/v2026.5.25-beta.13/librefang-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8df5b9f086d20a4b68b432c5f5514d10c3e94b54e9e2dbb9deecfe914bf2d477"
+      sha256 "e394a8704633b64e7d84a5cfb0a7e47c6480454835c674a1212e0b07f714807d"
     else
       url "https://github.com/librefang/librefang/releases/download/v2026.5.25-beta.13/librefang-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3ef779607c788557e8b25e66e597fa82b7696c23cfd9f14f48c23f7682f26f28"
+      sha256 "462b859206d56a3d3d55a99c73eddc1bdb778a3e269e69a0aa09e386819e508d"
     end
   end
 

@@ -2,28 +2,28 @@ class LibrefangRc < Formula
   desc "Community-Maintained Agent Operating System written in Rust (rc channel)"
   homepage "https://librefang.ai"
   license "MIT"
-  version "2026.5.28-beta.14"
+  version "2026.5.31-beta.16"
 
   conflicts_with "librefang", because: "both install a \`librefang\` binary"
   conflicts_with "librefang-beta", because: "both install a \`librefang\` binary"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/librefang/librefang/releases/download/v2026.5.28-beta.14/librefang-aarch64-apple-darwin.tar.gz"
-      sha256 "94c79f86a9c825c8b7e1e72d4c4a1557bbcf97e08505afe9dc2601d8c376ccb4"
+      url "https://github.com/librefang/librefang/releases/download/v2026.5.31-beta.16/librefang-aarch64-apple-darwin.tar.gz"
+      sha256 "0032db7518ba93e5a58bc43338e2e64e4564d85b65c1f3902085c3cebab6ba2e"
     else
-      url "https://github.com/librefang/librefang/releases/download/v2026.5.28-beta.14/librefang-x86_64-apple-darwin.tar.gz"
-      sha256 "a1a614a8af6dfe32535f492563cbea5a78d99a4a732c82fd6f8da1c6bcd6be19"
+      url "https://github.com/librefang/librefang/releases/download/v2026.5.31-beta.16/librefang-x86_64-apple-darwin.tar.gz"
+      sha256 "0bcf105f683d3ef45e4cce5c95ac8bb76692a9fa8846df4b07de8df77aa5fe29"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/librefang/librefang/releases/download/v2026.5.28-beta.14/librefang-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f662c7f5ccf219e7c5f5eb9f0c7438e319e23375b00a1836a68853a59e6341af"
+      url "https://github.com/librefang/librefang/releases/download/v2026.5.31-beta.16/librefang-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "f035cf3e71179672cb88ac351b7fd66c207da584ba273ad2805f88130971dade"
     else
-      url "https://github.com/librefang/librefang/releases/download/v2026.5.28-beta.14/librefang-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d1a1eb11c11abbf22956c65a3886f245acb26695b1898a6417c27c802eb43b2e"
+      url "https://github.com/librefang/librefang/releases/download/v2026.5.31-beta.16/librefang-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "0fb17467cf0e52db210ac7b28fc8cdbce0afae350096f4175f6c32c8f881cdc8"
     end
   end
 

@@ -1,38 +1,44 @@
 # Homebrew Tap for LibreFang
 
-Unofficial Homebrew tap for [LibreFang](https://librefang.ai), a community-maintained Agent Operating System written in Rust.
+Community-maintained Homebrew tap for [LibreFang](https://librefang.ai), an Agent Operating System written in Rust.
 
-## CLI
+The **stable CLI now ships from [homebrew-core](https://github.com/Homebrew/homebrew-core/pull/290413)** — install it with no tap required:
 
 ```bash
-brew tap librefang/tap
 brew install librefang
 ```
+
+This tap provides the **desktop app**, the **pre-release CLI channels** (beta / rc), and **version-pinned** builds.
 
 ## Desktop App (macOS)
 
 ```bash
 brew tap librefang/tap
-brew install --cask librefang
+brew install --cask librefang            # stable
+# brew install --cask librefang-beta     # beta channel
+# brew install --cask librefang-rc       # rc channel
 ```
 
-## Usage
+## Pre-release CLI (beta / rc)
 
 ```bash
-# Initialize LibreFang
-librefang init
-
-# Start the daemon
-librefang start
-
-# Dashboard: http://localhost:4545
+brew tap librefang/tap
+brew install librefang-beta              # beta channel
+brew install librefang-rc                # rc channel
 ```
 
 ## Version Pinning
 
 ```bash
-# Install a specific version
-brew install librefang/tap/librefang@2026.3.2114
+brew tap librefang/tap
+brew install librefang/tap/librefang@2026.6.29
+```
+
+## Usage
+
+```bash
+librefang init          # initialize
+librefang start         # start the daemon — dashboard at http://localhost:4545
 ```
 
 ## Documentation

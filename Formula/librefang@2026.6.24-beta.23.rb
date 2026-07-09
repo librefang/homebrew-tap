@@ -1,4 +1,4 @@
-class LibrefangAT2026624-beta23 < Formula
+class LibrefangAT2026624Beta23 < Formula
   desc "Community-Maintained Agent Operating System written in Rust"
   homepage "https://librefang.ai"
   license "MIT"

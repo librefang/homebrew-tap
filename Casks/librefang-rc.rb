@@ -16,8 +16,7 @@ cask "librefang-rc" do
   desc "Community-Maintained Agent Operating System written in Rust (rc channel)"
   homepage "https://librefang.ai"
 
-  conflicts_with cask: "librefang"
-  conflicts_with cask: "librefang-beta"
+  conflicts_with cask: ["librefang", "librefang-beta"]
 
   depends_on macos: ">= :ventura"
 

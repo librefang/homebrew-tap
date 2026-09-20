@@ -1,16 +1,16 @@
 cask "librefang" do
   arch arm: "aarch64", intel: "x64"
 
-  version "26.8.32199"
+  version "26.9.32199"
 
   on_arm do
-    sha256 "8c1793a840ed77279390cbaceaefe6b2ff85d64c957831aaa051f5e8bf231b11"
+    sha256 "4e81f4b0f6a776f70e99d72f3dfa7cc55fb350eed5276069168d96bcd82b2b0a"
   end
   on_intel do
-    sha256 "848af87ed7e55331ec541c5fcd51b69596d923d6c489a63b6ac83c95348bdf0e"
+    sha256 "9161581e86d105e40398ef98fa7548b0fdcf9132b3e82ba50faa77fa40fab286"
   end
 
-  url "https://github.com/librefang/librefang/releases/download/v2026.8.19/LibreFang_#{version}_#{arch}.dmg",
+  url "https://github.com/librefang/librefang/releases/download/v2026.9.19/LibreFang_#{version}_#{arch}.dmg",
       verified: "github.com/librefang/librefang/"
   name "LibreFang"
   desc "Community-Maintained Agent Operating System written in Rust"

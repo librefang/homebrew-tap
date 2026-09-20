@@ -2,28 +2,28 @@ class LibrefangRc < Formula
   desc "Community-Maintained Agent Operating System written in Rust (rc channel)"
   homepage "https://librefang.ai"
   license "MIT"
-  version "2026.9.14"
+  version "2026.9.19"
 
   conflicts_with "librefang", because: "both install a \`librefang\` binary"
   conflicts_with "librefang-beta", because: "both install a \`librefang\` binary"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/librefang/librefang/releases/download/v2026.9.14/librefang-aarch64-apple-darwin.tar.gz"
-      sha256 "c12186dcdd758ed50d2dd1f280f8751ff9398ee92a921d8d90c97a09f6af7aae"
+      url "https://github.com/librefang/librefang/releases/download/v2026.9.19/librefang-aarch64-apple-darwin.tar.gz"
+      sha256 "4b24f6a2b97b20279dc042463bd061090818f60ca063a9aae7fcc3954eafb99a"
     else
-      url "https://github.com/librefang/librefang/releases/download/v2026.9.14/librefang-x86_64-apple-darwin.tar.gz"
-      sha256 "471f8440d8768b881a65ff2b7dfa82cb66abd4b3e62d83171f8f0091e62cf0cf"
+      url "https://github.com/librefang/librefang/releases/download/v2026.9.19/librefang-x86_64-apple-darwin.tar.gz"
+      sha256 "c2ce92124454da18bfa0bad0dbabfb98f56063cee73e980ac5f2cc1cf5a521ed"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/librefang/librefang/releases/download/v2026.9.14/librefang-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "daffc4277b57982c2a9090bae6c3c629c1249902981c25025106bda74377ac1b"
+      url "https://github.com/librefang/librefang/releases/download/v2026.9.19/librefang-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8f64e2fc44543841fb6430e0075687c6fed7e7c3ad21a84d94464c54b7697335"
     else
-      url "https://github.com/librefang/librefang/releases/download/v2026.9.14/librefang-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "26c76044e55c642cc44fc43de7398b6b6ff222b7238b3408c282c1cdec5b3e08"
+      url "https://github.com/librefang/librefang/releases/download/v2026.9.19/librefang-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "66f4edf462a5e1bb245579099d08381f3447bb36ee99fd4180f5caf548229dce"
     end
   end
 

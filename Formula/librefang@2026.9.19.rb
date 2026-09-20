@@ -1,11 +1,8 @@
-class LibrefangBeta < Formula
-  desc "Community-Maintained Agent Operating System written in Rust (beta channel)"
+class LibrefangAT2026919 < Formula
+  desc "Community-Maintained Agent Operating System written in Rust"
   homepage "https://librefang.ai"
   license "MIT"
   version "2026.9.19"
-
-  conflicts_with "librefang", because: "both install a \`librefang\` binary"
-  conflicts_with "librefang-rc", because: "both install a \`librefang\` binary"
 
   on_macos do
     if Hardware::CPU.arm?
@@ -26,6 +23,8 @@ class LibrefangBeta < Formula
       sha256 "66f4edf462a5e1bb245579099d08381f3447bb36ee99fd4180f5caf548229dce"
     end
   end
+
+  keg_only :versioned_formula
 
   def install
     bin.install "librefang"
